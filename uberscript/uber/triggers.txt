@@ -1,0 +1,33 @@
+# UberScript's Trigger file. One trigger per line.
+# 
+# Trigger|Channel|Action
+# Note: Use * to work in * channels (Except those blacklisted)
+# Trigger or Action can contain macros (See Readme.txt for full list) 
+#
+# Note: Don't use "/" before an action, that's already implied. 
+#
+# Example:
+#       !spam|#3am|say Booooooooooooooooom!
+#       !kiss|*|me kisses %n 
+#---------------------------------------
+# Example ones - remove the first # of each line to enable it
+# 
+# To respond to !peak commands: (Peak will need to be enabled also)
+#!peak|*|uberpeak
+# To display the topic when somebody types !topic;
+#!topic|*|say Topic in %c is %t
+# Example of the /uc command (Rainbow colours)
+#!spam|*|uc Boooooooooom!
+# Because IRC is very friendly...
+#!hug|*|me gives %n a big hug!
+#!kiss|*|me snoggles up to %n in %c...
+# To complain when somebody slaps you:
+#slaps %m|*|say Oi! Oi! Stop %n somebody, they keep slapping me!!
+# To respond to !chanlist with the number of channels you're currently in; 
+#!chanlist|*|say I am in %h channels and %a queries.
+# To give somebody something random when they say "gimme"
+#gimme|*|ubergive %n
+# To be polite and say thanks when somebody gives you something:
+#gives %m|*|say Thanks, %n!
+# Some advertising...
+!uberscript|*|say Get the great UberScript from http://digdilem.org/code/xchat/xchat.php

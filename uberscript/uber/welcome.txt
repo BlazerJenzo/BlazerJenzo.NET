@@ -1,0 +1,50 @@
+# Part of UberScript, by Flash. 
+# 
+# This file for the Greeting system of Uberscript. The entries in here will be called whenever 
+# somebody joins a channel you are in.
+# It can be used to auto-op, auto-voice or greet people who join a specific channel or all channels.
+#
+# Macros will be expanded - see Readme.txt for a full list. 
+#
+# Format is thus:  (Any line beginning with # is a comment and won't be read)
+#
+# One entry per line, can have multiple entries for same chan/nick etc.
+# Actual greeting can be "say message" or if not say, can be "me waves hello" 
+# to perform an action, or "mode %n +v" to autovoice, or "mode %n +o" to auto-op.
+# For multiple actions, just have multiple commands for the same nick/chan - 
+#  they'll be performed in the order they appear here.
+# Use * to apply to all channels or all nicks.
+# Note: If the channel is blacklisted, any actions for that channel will NOT work.
+#
+# Format is: nick|channel|action 
+#
+#  Examples:  (Obviously uncomment to use)
+#   To say hello to everyone who joins channel #3am with no logging :
+#       *|#3am|say Hello %n, welcome to %c!
+#   To hug everyone who joins every channel.
+#       *|*|me gives %n a big hug!
+#   To say hello to somebody in a private message (no logging) :
+#       *|#3am|msg Hello %n, welcome to %c!
+#
+# Remember you can enable or disable greetings globally with the "/uset uber_greet" toggle
+#
+# Warning! Doing greetings etc in all channels is going to annoy a whole bunch of people.
+# If you do this and get in trouble, we never met, ok? 
+#
+######### End of lecture - rest is your configuration ############  
+# Some examples - remove # from the beginning of any line that isn't a comment (Hint - good lines contain |'s)
+#
+# Example 1 - Simply say hello to anyone joining #3am. Uncomment following line to use:
+#*|#3am|say Hello %n, welcome to %c!
+#
+# Give colourful rainbow hello to anyone joining #uberscript
+#*|#uberscript|uc Hello %n, welcome to my channel, %c, on this fine %w!
+#
+# Grant Op to my good friend, NorfolkEnchants when he joins any channel!
+#NorfolkEnchants|*|mode +o %n
+#
+# I really like NorfolkEnchants, so I'll give him a random present when he joins too
+#NorfolkEnchants|*|ubergive %n
+#
+# I want to give every visitor to #3am voice when they join (Obviously, I need to be op)
+#*|#3am|mode +v %n

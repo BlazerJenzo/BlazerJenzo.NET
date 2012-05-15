@@ -1,0 +1,2 @@
+MSG Q@CServe.quakenet.org AUTH Nickname PASSWORD
+msg nickserv identify nickservpass

@@ -23,14 +23,3 @@ spotify_xchat.py - XChat2 Now Playing script for Spotify in perl
 - Place spotify_xchat.pl in ~/.xchat2 - If you have XChat2 open, then choose the menu XChat og choose Load plugin or script
   find the .xchat2 directory in you file three and doubleclick on spotify_xchat.pl
   If XChat2 is closed then just open XChat2 then it will load the script on startup
-
-rhythmbox_nowplaying.pl -XChat2 Now Playing script for Banshee Music Player in Perl
-- Place rhythmbox_nowplaying.pl in ~/.xchat2 - If you have XChat2 open, then choose the menu XChat og choose Load plugin or script
-  find the .xchat2 directory in you file three and doubleclick on rhythmbox_nowplaying.pl
-  If XChat2 is closed then just open XChat2 then it will load the script on startup
-
-Überscript
-A huge collection of useful functions. Some fun, some that I don't know how I lived without in Perl
-- Move the files inside the uberscript directory to ~/.xchat2 - If you have XChat2 open, then choose the menu XChat og choose Load plugin or script
-  find the .xchat2 directory in you file three and doubleclick on UberScript.pl
-  If XChat2 is closed then just open XChat2 then it will load the script on startup
